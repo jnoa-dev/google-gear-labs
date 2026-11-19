@@ -45,16 +45,3 @@ Para limpiar: `docker rm -f coredns`.
 | `@ 60 IN A 1.2.3.4` | `my-domain.com` apunta a esa IPv4, con TTL de 60 segundos |
 | `www 60 IN CNAME my-domain.com.` | `www` es un alias de `my-domain.com` |
 
-## Experimentos propios
-
-- [Qué pasó con dos registros A para el mismo nombre, y qué devuelve `dig`.]
-- [Qué observé del TTL en un resolvedor público: cómo baja y qué pasa al llegar a 0.]
-
-Las salidas de `dig` están en `evidencia/`.
-
-## Qué aprendí
-
-- [Diferencia entre un registro A y un CNAME, y por qué se usa un alias para `www`.]
-- [Qué es el TTL y qué implica tenerlo alto o bajo durante un cambio.]
-- [Diferencia entre NXDOMAIN y una respuesta NOERROR sin registros.]
-- [Por qué se sube el serial del SOA en cada cambio.]
